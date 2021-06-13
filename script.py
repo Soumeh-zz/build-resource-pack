@@ -24,7 +24,7 @@ def generate_zip(filename, items, output_folder):
             print("Could not find path {} in the main directory".format(item))
     if not path.exists(output_folder):
         mkdir(output_folder)
-    with ZipFile(output_folder + filename+".zip", 'w+') as file:
+    with ZipFile(output_folder + filename+".zip", 'w') as file:
         for item in listdir('temp'):
             chdir(temp)
             if path.isfile(item):
