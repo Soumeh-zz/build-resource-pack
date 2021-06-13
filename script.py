@@ -52,10 +52,10 @@ def generate_sha1(filename, output_folder):
 if __name__ == '__main__':
     filename = environ['FILENAME']
     items = environ['ITEMS'].split('\n')
-    if 'GEN_SHA1' in environ:
+    if 'GEN-SHA1' in environ:
         gen_sha1 = environ['GEN_SHA1']
     else:
-        gen_sha1 = 0
+        gen_sha1 = '0'
     if 'OUTPUT-FOLDER' in environ:
         output_folder = environ['OUTPUT-FOLDER']
     else:
