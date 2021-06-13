@@ -53,7 +53,7 @@ if __name__ == '__main__':
     filename = environ['FILENAME']
     items = environ['ITEMS'].split('\n')
     if 'GEN-SHA1' in environ:
-        gen_sha1 = environ['GEN_SHA1']
+        gen_sha1 = environ['GEN-SHA1']
     else:
         gen_sha1 = '0'
     if 'OUTPUT-FOLDER' in environ:
