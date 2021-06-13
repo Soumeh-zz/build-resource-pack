@@ -14,7 +14,13 @@ inputs:
     description: 'The directory to output files in'
     default: 'build'
     required: false
-
 runs:
   using: "docker"
   image: "Dockerfile"
+  env:
+    FILENAME: ${{ inputs.filename }}
+    ITEMS: ${{ inputs.items }}
+    GEN-SHA1: ${{ inputs.gen-sha1 }}
+    OUTPUT-FOLDER: ${{ inputs.output-folder }}
+branding:
+  icon: "folder-plus"
