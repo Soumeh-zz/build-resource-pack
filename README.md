@@ -4,6 +4,9 @@ Generate Minecraft resource packs from multiple directories, to create multiple 
 
 ## Usage
 
+**[Click Here](https://github.com/Soumeh/resource-pack-example/generate)** to create a new repository with the workflow already set up.
+Rememember to edit `.github/workflows/compile-pack.yml`
+
 ### Example Workflow
 
 ```yaml
