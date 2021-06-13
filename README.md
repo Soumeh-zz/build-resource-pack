@@ -17,15 +17,15 @@ jobs:
         uses: actions/checkout@v2
       # copy-paste this part for however many packs you want to build
       - name: Build resource pack
-        uses: Soumeh/generate-resource-pack@master
+        uses: Soumeh/build-resource-pack@master
         with:
           # The name of the built pack
           filename: MyPack
           # The directories / files to be built into the pack
           # Directories take priority as they go down the list, replacing any files from the above directories
-          items:
-            - folder1
-            - folder2
+          items: |
+            folder1
+            folder2
           # Whether or not to generate a Sha1 hash of the built pack 
           # Useful for server resource packs
           # default: false

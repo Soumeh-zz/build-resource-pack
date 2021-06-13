@@ -10,9 +10,9 @@ jobs:
         uses: Soumeh/build-resource-pack@master
         with:
           filename: TestPack
-          items:
-            - folder1
-            - folder2
+          items: |
+            folder1
+            folder2
           gen-sha1: true
       - name: Publish
         uses: github-actions-x/commit@v2.8
