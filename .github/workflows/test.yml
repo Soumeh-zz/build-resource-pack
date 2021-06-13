@@ -18,7 +18,7 @@ jobs:
         uses: github-actions-x/commit@v2.8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          push-branch: 'master'
+          push-branch: 'build'
           force-add: 'true'
           commit-message: 'compile packs'
           name: Compiler[bot]
