@@ -60,7 +60,7 @@ if __name__ == '__main__':
         output_folder = environ['OUTPUT-FOLDER']
     else:
         output_folder = 'build'
-    if !output_folder.endswith('/'):
+    if not output_folder.endswith('/'):
         output_folder += '/'
     generate_zip(filename, items, output_folder)
     if gen_sha1.lower() in ("yes", "y", "true", "t", "1"):
