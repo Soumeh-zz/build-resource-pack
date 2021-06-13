@@ -41,7 +41,7 @@ BLOCKSIZE = 65536
 
 def generate_sha1(filename, output_folder):
     hasher = sha1()
-    with open("build/" + filename+".zip", 'rb') as in_file:
+    with open(output_folder + filename+".zip", 'rb') as in_file:
         buf = in_file.read(BLOCKSIZE)
         while len(buf) > 0:
             hasher.update(buf)
@@ -60,6 +60,8 @@ if __name__ == '__main__':
         output_folder = environ['OUTPUT-FOLDER']
     else:
         output_folder = 'build'
+    if !output_folder.endswith('/'):
+        output_folder += '/'
     generate_zip(filename, items, output_folder)
     if gen_sha1.lower() in ("yes", "y", "true", "t", "1"):
         generate_sha1(filename, output_folder)
