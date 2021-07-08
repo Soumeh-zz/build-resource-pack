@@ -1,3 +1,5 @@
+# Moved [here](https://github.com/Sorrowfall/Resource-Packager)
+
 # Minecraft Resource Pack Builder
 
 Generate Minecraft resource packs from multiple directories, to create multiple resource packs with shared resources but different artstyles.
